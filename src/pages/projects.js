@@ -21,7 +21,7 @@ const FramerImage = motion(Image)
 const FeaturedProject = ({type, title, summary, img, link, github}) => {
 
     return(
-        <article className='w-full flex justify-between items-center border border-solid border-dark bg-light shadow-2xl p-12 relative  dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:ronded-2xl xs:p-4 bg-right-top'>
+        <article className='w-full flex justify-between items-center border border-solid border-dark bg-light shadow-2xl p-12 relative  dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:ronded-2xl xs:p-4 xs:w-[90%] bg-right-top'>
             <div className='absolute top-2 -right-3 -z-10 w-[100%] h-[101%] bg-dark  dark:bg-light xs:ring-2 sm:h-[102%] xs:w-[100%] ' />
             <Link href={link} target="_blank" className='w-1/2 cursor-pointer overflow-hidden  lg:w-full' >
                 <FramerImage src={img} alt={title} className="w-full h-auto"
@@ -52,7 +52,7 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
 const Projects = ({title, type, img, link, github}) => {
 
     return(
-        <article className='w-full flex justify-center items-center border border-solid border-dark bg-light shadow-2xl p-6 relative flex-col dark:bg-dark dark:border-light xs:p-4 '>
+        <article className='w-full flex justify-center items-center border border-solid border-dark bg-light shadow-2xl p-6 relative flex-col dark:bg-dark dark:border-light xs:p-4 xs:w-[90%]'>
             <div className='absolute top-2 -right-3 -z-10 w-[100%] h-[101%] bg-dark  dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] ' />
             <Link href={link} target="_blank" className='w-full cursor-pointer overflow-hidden' >
                 <FramerImage src={img} alt={title} className="w-full h-auto"
