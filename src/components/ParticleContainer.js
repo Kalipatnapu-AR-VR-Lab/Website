@@ -41,7 +41,7 @@ const ParticleContainer = () => {
                         quantity: 90
                     },
                     repulse: {
-                        distance: 200,
+                        distance: 100,
                         duration: 0.4
                     }
                 },
@@ -51,7 +51,7 @@ const ParticleContainer = () => {
                     value: "#18191A"
                 },
                 links: {
-                    color: "#E9EEF3",
+                    color: "#18191A",
                     distance: 150,
                     enable: true,
                     opacity: 0.5,
