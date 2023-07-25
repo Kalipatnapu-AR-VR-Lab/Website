@@ -13,6 +13,7 @@ import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 import Events from '@/components/Events'
 import Publications from '@/components/Publications'
+import ParticleContainer from '@/components/ParticleContainer'
 
 const FramerImage = motion(Image)
 
@@ -85,6 +86,7 @@ const project = () => {
 
             <TransitionEffect />
 
+            <ParticleContainer />
             <main className='w-full flex flex-col items-center justify-center bgProject bg-fixed'>
                 <Layout className='pt-32 '>
                     <AnimatedText text="Imagination Trumps Knowledge!" className='my-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>

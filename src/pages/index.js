@@ -9,6 +9,7 @@ import TransitionEffect from '@/components/TransitionEffect'
 import Batch from '@/components/Batch'
 import Members from '@/components/Members'
 import Tilt from 'react-parallax-tilt';
+import ParticleContainer from '@/components/ParticleContainer'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <div className='w-full h-full bg-dark/10'>
         <main className='flex items-center text-dark w-full min-h-[95vh] dark:text-light py-32'>
           <Layout className='p-0 md:p-1.5 sm:p-8'>
+            <ParticleContainer />
             <div className='flex items-center justify-between w-full lg:flex-col'>
               <div className='w-1/2 md:w-full bg-transparent'>
               </div>
