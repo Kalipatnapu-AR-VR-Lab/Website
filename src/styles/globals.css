@@ -44,21 +44,21 @@
 }
 
 .bgOverview {
-  background-image: url("../../public/images/backgrounds/bg.png");
+  background-image: url("/public/images/backgrounds/bg.png");
   background-blend-mode: multiply;
   background-size: cover;
   background-position: right;
 }
 
 .bgAbout {
-  background-image: url("../../public/images/backgrounds/about.jpg");
+  background-image: url("/public/images/backgrounds/about.jpg");
   background-blend-mode: multiply;
   background-size: cover;
   background-position: right;
 }
 
 .bgTeam {
-  background-image: url("../../public/images/backgrounds/team.jpg");
+  background-image: url("/public/images/backgrounds/team.jpg");
   background-repeat: no-repeat, repeat;
   background-blend-mode: multiply;
   background-size: cover;
@@ -66,7 +66,7 @@
 }
 
 .bgHome {
-  background-image: url("../../public/images/backgrounds/home.jpeg");
+  background-image: url("/public/images/backgrounds/home.jpeg");
   background-repeat: no-repeat, repeat;
   background-blend-mode: multiply;
   background-size: cover;
@@ -74,7 +74,7 @@
 }
 
 .bgProject {
-  background-image: url("../../public/images/backgrounds/projects.jpg");
+  background-image: url("/public/images/backgrounds/projects.jpg");
   background-repeat: no-repeat, repeat;
   background-blend-mode: multiply;
   background-size: cover;
