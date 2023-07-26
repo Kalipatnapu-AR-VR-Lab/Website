@@ -5,8 +5,6 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon, LinkedInIcon } from '@/components/Icons'
-import event1 from '../../public/images/projects/event1.jpeg'
-import electives from '../../public/images/projects/electives.png'
 import netflix from '../../public/images/projects/netflix.png'
 import pf from '../../public/images/projects/pf.png'
 import { motion } from 'framer-motion'
@@ -14,6 +12,8 @@ import TransitionEffect from '@/components/TransitionEffect'
 import Events from '@/components/Events'
 import Publications from '@/components/Publications'
 import ParticleContainer from '@/components/ParticleContainer'
+
+import event1 from '../../public/images/projects/event1.jpeg'
 
 const FramerImage = motion(Image)
 

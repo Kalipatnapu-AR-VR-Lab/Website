@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Tilt from 'react-parallax-tilt'
 
 const qoute = {
     initial: {
@@ -31,14 +32,16 @@ const singleWord = {
 const AnimatedText = ({ text, className = 'heading' }) => {
     return (
         <div className='w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden sm:py-0 uppercase'>
-            <motion.h1 className={`${className} inline-block w-full text-dark font-bold text-8xl dark:text-light`} variants={qoute} initial="initial" animate="animate">
-                {
-                    text.split(" ").map((word, index) => 
-                    <motion.span key={word+'-'+index} className='inline-block heading first-letter:text-primary' variants={singleWord} >
-                        {word}&nbsp;
-                    </motion.span>)
-                }
-            </motion.h1>
+            <Tilt>
+                <motion.h1 className={`${className} inline-block w-full text-dark font-bold text-8xl dark:text-light`} variants={qoute} initial="initial" animate="animate">
+                    {
+                        text.split(" ").map((word, index) =>
+                            <motion.span key={word + '-' + index} className='inline-block heading first-letter:text-primary' variants={singleWord} >
+                                {word}&nbsp;
+                            </motion.span>)
+                    }
+                </motion.h1>
+            </Tilt>
         </div>
     )
 }

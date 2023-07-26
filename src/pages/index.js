@@ -1,12 +1,10 @@
 import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Link from 'next/link'
-
 import AnimatedText from '@/components/AnimatedText'
 import { LinkArrow } from '@/components/Icons'
 import TransitionEffect from '@/components/TransitionEffect'
 import Batch from '@/components/Batch'
-import Tilt from 'react-parallax-tilt'
 import ParticleContainer from '@/components/ParticleContainer'
 
 export default function Home() {
@@ -25,9 +23,9 @@ export default function Home() {
               <div className='w-1/2 md:w-full bg-transparent'>
               </div>
                 <div className='w-[60%] flex flex-col items-center self-center xl:w-full lg:text-center heading glassmorphism p-8'>
-              <Tilt>
+
                   <AnimatedText text='Turning Vision Into Reality.' className='!text-7xl uppercase !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:text-3xl' />
-              </Tilt>
+
                   <p className='my-4 text-xl font-medium md:!text-sm sm:!texr-xs'>We are a group of people who are insanely motivated to explore how we can engineer realities and experiences using tech.
                   </p>
 

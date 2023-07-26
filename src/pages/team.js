@@ -181,7 +181,7 @@ const contact = () => {
       </Head>
 
       <TransitionEffect />
-<ParticleContainer />
+      <ParticleContainer />
 
       <main className='flex w-full flex-col items-center justify-center bgTeam bg-fixed'>
         <Layout className='pt-32 card'>

@@ -12,33 +12,6 @@ import Education from '@/components/Education'
 import Facilities from '@/components/Facilities'
 import Gallery from '@/components/Gallery'
 
-
-const AnimatedNum = ({ value }) => {
-    const ref = useRef(null)
-
-    const motionValue = useMotionValue(0)
-    const springValue = useSpring(motionValue, { duration: 3000 })
-    const inView = useInView(ref, { once: true })
-
-    useEffect(() => {
-        if (inView) {
-            motionValue.set(value)
-        }
-    }, [inView, value, motionValue])
-
-    useEffect(() => {
-        springValue.on("change", (latest) => {
-            if (ref.current && latest.toFixed(0) <= value) {
-                ref.current.textContent = latest.toFixed(0)
-            }
-        })
-    }, [springValue, value])
-
-    return <span ref={ref}>
-
-    </span>
-}
-
 const about = () => {
     return (
         <>

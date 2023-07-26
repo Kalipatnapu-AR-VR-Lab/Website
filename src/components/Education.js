@@ -1,8 +1,60 @@
 import React from 'react'
+import AnimatedText from './AnimatedText'
+import { motion } from 'framer-motion'
+import Image from 'next/image'
+import Link from 'next/link'
+
+
+import event1 from '../../public/images/projects/event1.jpeg'
+
+const FramerImage = motion(Image)
+
+const Featured = ({ type, title, summary, img, link }) => {
+
+  return (
+    <article className='w-full flex justify-between items-center border border-solid border-dark glassmorphism shadow-2xl p-12 relative  dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:ronded-2xl xs:p-2 m-0'>
+      <Link href={link} target="_blank" className='w-1/2 cursor-pointer overflow-hidden  lg:w-full' >
+        <FramerImage src={img} alt={title} className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ duration: 0.2 }}
+          priority sizes='(max-width: 768px) 100vw, 
+              (max-width: 1200px) 50vw, 
+              50vw' />
+      </Link>
+      <div className=' w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6'>
+        <span className=' dark:text-primary font-medium text-xl text-primaryDark xs:text-base'>
+          {type}
+        </span>
+        <Link href={link} target="_blank"  >
+          <h2 className='my-2 w-full text-left text-4xl font-bold hover:underline hover:underline-offset-2'>{title}</h2>
+        </Link>
+        <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
+        
+      </div>
+    </article>
+  )
+}
 
 const Education = () => {
   return (
-    <div>Education</div>
+      <main className='flex w-full flex-col items-center justify-center'>
+        <div className='pt-16'>
+
+          <AnimatedText text="Education" className='mb-16 !text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 ' />
+          <p className='text-2xl md:text-xl font-medium mb-16 text-center'> Embark on an awe-inspiring voyage through the veil of reality with our team of tech sorcerers and art visionaries, where imagination and innovation converge to craft immersive worlds beyond imagination. 🚀🎨🌌 </p>
+
+          <Featured
+            type="Talk Session"
+            title="Extended Reality"
+            summary="An educational event on Extended Reality (XR) technology was a success, featuring discussions on basics, applications, success stories, motivation, coding tools, best practices, and challenging problems. The event expanded our understanding of the potential of AR/VR."
+            img={event1}
+            link="https://drive.google.com/file/d/1FgmlWu6GiPfdxaDTISJuLLgIu98vpqCH/view?pli=1"
+            sourceLink="https://www.linkedin.com/feed/update/urn:li:activity:7071875912685821952?utm_source=share&utm_medium=member_desktop"
+            />
+
+        </div>
+      </main>
   )
 }
 
