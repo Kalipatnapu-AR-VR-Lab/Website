@@ -196,7 +196,7 @@ const contact = () => {
             {
               facultyTeam.map((member) => {
                 return (
-                  <Team name={member.name} role={member.role} linkedIn={member.linkedIn} link={member.link} image={member.image} />
+                  <Team name={member.name} role={member.role} linkedIn={member.linkedIn} link={member.link} image={member.image} key={member.name} />
                 )
               })
             }
@@ -209,7 +209,7 @@ const contact = () => {
             {
               projectTeam.map((member) => {
                 return (
-                  <Team name={member.name} role={member.role} linkedIn={member.linkedIn} link={member.link} image={member.image} />
+                  <Team name={member.name} role={member.role} linkedIn={member.linkedIn} link={member.link} image={member.image} key={member.name} />
                 )
               })
             }
@@ -222,7 +222,7 @@ const contact = () => {
             {
               researchTeam.map((member) => {
                 return (
-                  <Team name={member.name} role={member.role} linkedIn={member.linkedIn} link={member.link} image={member.image} />
+                  <Team name={member.name} role={member.role} linkedIn={member.linkedIn} link={member.link} image={member.image} key={member.name} />
                 )
               })
             }
@@ -234,7 +234,7 @@ const contact = () => {
             {
               webTeam.map((member) => {
                 return (
-                  <Team name={member.name} role={member.role} linkedIn={member.linkedIn} link={member.link} image={member.image} />
+                  <Team name={member.name} role={member.role} linkedIn={member.linkedIn} link={member.link} image={member.image} key={member.name} />
                 )
               })
             }
@@ -247,7 +247,7 @@ const contact = () => {
             {
               psdTeam.map((member) => {
                 return (
-                  <Team name={member.name} role={member.role} linkedIn={member.linkedIn} link={member.link} image={member.image} />
+                  <Team name={member.name} role={member.role} linkedIn={member.linkedIn} link={member.link} image={member.image} key={member.name} />
                 )
               })
             }
