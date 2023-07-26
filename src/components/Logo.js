@@ -16,7 +16,7 @@ const Logo = () => {
           }
         }}
         whileTap={{ scale: 0.7 }}>
-        AR
+        KXR
       </MotionLink>
     </motion.div>
   )

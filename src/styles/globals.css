@@ -10,7 +10,6 @@
   src: url("../pages/fonts/Elianto-Regular.woff");
 } */
 
-
 * {
   font-family: 'Exo', sans-serif;
 }
@@ -41,42 +40,4 @@
   background-color: rgba(233, 238, 243, 0.06);
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
-}
-
-.bgOverview {
-  background-image: url("/public/images/backgrounds/bg.png");
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: right;
-}
-
-.bgAbout {
-  background-image: url("/public/images/backgrounds/about.jpg");
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: right;
-}
-
-.bgTeam {
-  background-image: url("/public/images/backgrounds/team.jpg");
-  background-repeat: no-repeat, repeat;
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: top;
-}
-
-.bgHome {
-  background-image: url("/public/images/backgrounds/home.jpeg");
-  background-repeat: no-repeat, repeat;
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: top;
-}
-
-.bgProject {
-  background-image: url("/public/images/backgrounds/projects.jpg");
-  background-repeat: no-repeat, repeat;
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: top;
 }

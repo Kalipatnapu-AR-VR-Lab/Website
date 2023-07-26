@@ -20,7 +20,7 @@ const about = () => {
                 <meta name="description" content="later" />
             </Head>
             <TransitionEffect />
-            <main className='flex w-full flex-col items-center justify-center  bgOverview bg-fixed'>
+            <main className='flex w-full flex-col items-center justify-center bg-overview bg-cover bg-right bg-fixed'>
                 <Layout className='pt-32 glassbg'>
                     <AnimatedText text="OVERVIEW !" className='my-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 ' />
                     <div className='grid w-full grid-cols-8 gap-16 sm:gap-8 '>
@@ -47,7 +47,7 @@ const about = () => {
                     </div>
                 </Layout>
             </main>
-            <Layout className='bgAbout bg-fixed'>
+            <Layout className=' bg-about bg-cover bg-bottom bg-fixed'>
                 <Education />
                 <Facilities />
                 <Gallery />

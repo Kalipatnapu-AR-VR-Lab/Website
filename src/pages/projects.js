@@ -85,7 +85,7 @@ const project = () => {
             <TransitionEffect />
 
             <ParticleContainer />
-            <main className='w-full flex flex-col items-center justify-center bgProject bg-fixed'>
+            <main className='w-full flex flex-col items-center justify-center bg-projects bg-top bg-cover bg-fixed'>
                 <Layout className='pt-32 '>
                     <AnimatedText text="Exploring AR/VR Horizons!" className='my-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl' />
 

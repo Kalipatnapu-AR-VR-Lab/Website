@@ -11,9 +11,6 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['var(--font-heading)'],
-      },
       colors: {
         dark: "#18191A",
         light: "#E9EEF3",
@@ -23,6 +20,13 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 9s linear infinite',
       },
+      backgroundImage: {
+        'home': "url('../../public/images/backgrounds/home.jpeg')",
+        'overview': "url('../../public/images/backgrounds/bg.png')",
+        'about': "url('../../public/images/backgrounds/about.jpg')",
+        'projects': "url('../../public/images/backgrounds/projects.jpg')",
+        'team': "url('../../public/images/backgrounds/team.jpg')"
+      }
     },
     screens: {
       "2xl": { max: "1535px" },
