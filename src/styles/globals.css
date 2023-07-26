@@ -5,19 +5,19 @@
 @tailwind utilities;
 
 
-@font-face {
+/* @font-face {
   font-family: heading;
   src: url("../pages/fonts/Elianto-Regular.woff");
-}
+} */
 
 
 * {
   font-family: 'Exo', sans-serif;
 }
 
-.heading {
+/* .heading {
   font-family: heading;
-}
+} */
 
 .glassmorphism {
   background: rgba(255, 255, 255, 0.25);
