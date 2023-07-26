@@ -25,13 +25,15 @@ const Gallery = () => {
           {
             gallery.map((photo) => {
               return (
+                <div key={photo}>
                 <Tilt>
-                  <motion.div className='group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-dark/30 glassmorphism' key={photo} >
+                  <motion.div className='elative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-dark/30 glassmorphism' >
                     <div class="h-full w-full aspect-video">
                       <Image class="h-full w-full object-cover saturate-0 hover:saturate-100 duration-500 hover:scale-110 p-2" src={photo} alt={photo} />
                     </div>
                   </motion.div>
                 </Tilt>
+                </div>
               )
             })
           }
