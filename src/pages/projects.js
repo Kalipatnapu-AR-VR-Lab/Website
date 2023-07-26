@@ -78,7 +78,7 @@ const project = () => {
     return (
         <div className=''>
             <Head>
-                <title>SPV || Projects Page</title>
+                <title>KXR | Projects</title>
                 <meta name="description" content="later" />
             </Head>
 
