@@ -2,7 +2,7 @@ import React from 'react'
 
 const Facilities = () => {
   return (
-    <div>Facilities</div>
+    <div>State-of-the-Art Setup     immersive Gear Haven</div>
   )
 }
 

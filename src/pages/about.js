@@ -75,7 +75,7 @@ const about = () => {
                     </div>
                 </Layout>
             </main>
-            <Layout>
+            <Layout className='bgAbout bg-fixed'>
             <Education />
             <Facilities />
             <Gallery />

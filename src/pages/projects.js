@@ -4,8 +4,8 @@ import Layout from '@/components/Layout'
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { GithubIcon } from '@/components/Icons'
-import decrypt from '../../public/images/projects/decrypt.png'
+import { GithubIcon, LinkedInIcon } from '@/components/Icons'
+import event1 from '../../public/images/projects/event1.jpeg'
 import electives from '../../public/images/projects/electives.png'
 import netflix from '../../public/images/projects/netflix.png'
 import pf from '../../public/images/projects/pf.png'
@@ -18,17 +18,16 @@ import ParticleContainer from '@/components/ParticleContainer'
 const FramerImage = motion(Image)
 
 
-const FeaturedProject = ({type, title, summary, img, link, github}) => {
+const FeaturedProject = ({ type, title, summary, img, link, sourceLink, button, source }) => {
 
-    return(
-        <article className='w-full flex justify-between items-center border border-solid border-dark bg-light shadow-2xl p-12 relative  dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:ronded-2xl xs:p-4 xs:w-[90%] bg-right-top'>
-            <div className='absolute top-2 -right-3 -z-10 w-[100%] h-[101%] bg-dark  dark:bg-light xs:ring-2 sm:h-[102%] xs:w-[100%] ' />
+    return (
+        <article className='w-full flex justify-between items-center border border-solid border-dark glassmorphism shadow-2xl p-12 relative  dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:ronded-2xl xs:p-4 xs:w-[90%] m-0'>
             <Link href={link} target="_blank" className='w-1/2 cursor-pointer overflow-hidden  lg:w-full' >
                 <FramerImage src={img} alt={title} className="w-full h-auto"
-                whileHover={{scale: 1.05}}
-                whileTap={{scale: 0.9}}
-                transition={{duration: 0.2}}
-                priority sizes='(max-width: 768px) 100vw, 
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.9 }}
+                    transition={{ duration: 0.2 }}
+                    priority sizes='(max-width: 768px) 100vw, 
                 (max-width: 1200px) 50vw, 
                 50vw' />
             </Link>
@@ -41,24 +40,23 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
                 </Link>
                 <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
                 <div className='mt-2 flex items-center'>
-                <Link href={github} target="_blank" className='w-10' > <GithubIcon /> </Link>
-                <Link href={link} target="_blank" className= 'mx-4 flex items-center bg-light text-dark p-2.5 px-6 text-lg  hover:bg-primary border-2 border-solid border-dark dark:bg-dark dark:text-light hover:dark:bg-primaryDark hover:dark:text-light dark:border-light md:p-2 md:px-4 md:text-base duration-700 heading font-[50] tracking-[0.2rem]' > Visit Project </Link>
+                    <Link href={sourceLink} target="_blank" className='w-10' > {source ? <LinkedInIcon /> : <GithubIcon />} </Link>
+                    <Link href={link} target="_blank" className=' mx-4 flex items-center rounded-md bg-primary text-light hover:bg-transparent p-2 px-6 text-lg border-2 border-primary border-solid  hover:text-primary md:p-2 md:px-4 md:text-base duration-500 font-[50] tracking-[0.075rem]' > {button} </Link>
                 </div>
             </div>
         </article>
     )
 }
 
-const Projects = ({title, type, img, link, github}) => {
+const Projects = ({ title, type, img, link, github }) => {
 
-    return(
-        <article className='w-full flex justify-center items-center border border-solid border-dark bg-light shadow-2xl p-6 relative flex-col dark:bg-dark dark:border-light xs:p-4 xs:w-[90%]'>
-            <div className='absolute top-2 -right-3 -z-10 w-[100%] h-[101%] bg-dark  dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] ' />
+    return (
+        <article className='w-full flex justify-center items-center border border-solid border-dark glassmorphism bg-light shadow-2xl p-6 relative flex-col dark:bg-dark dark:border-light xs:p-4 xs:w-[90%]'>
             <Link href={link} target="_blank" className='w-full cursor-pointer overflow-hidden' >
                 <FramerImage src={img} alt={title} className="w-full h-auto"
-                whileHover={{scale: 1.05}}
-                whileTap={{scale: 0.9}}
-                transition={{duration: 0.2}} />
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.9 }}
+                    transition={{ duration: 0.2 }} />
             </Link>
             <div className='w-full flex flex-col items-start justify-between mt-4'>
                 <span className=' dark:text-primary font-medium text-xl text-primaryDark lg:text-lg md:text-base'>
@@ -68,8 +66,8 @@ const Projects = ({title, type, img, link, github}) => {
                     <h2 className='my-2 w-full text-left text-3xl font-bold hover:underline hover:underline-offset-2 lg:text-2xl'>{title}</h2>
                 </Link>
                 <div className='w-full mt-2 flex items-center justify-between'>
-                <Link href={link} target="_blank" className= 'flex items-center bg-light text-dark p-1 px-6 text-sm  hover:bg-primary border-2 border-solid border-dark dark:bg-dark dark:text-light hover:dark:bg-primaryDark hover:dark:text-light dark:border-light md:p-2 md:px-4 md:text-base duration-700 heading font-[10] tracking-[0.2rem]' > Visit </Link>
-                <Link href={github} target="_blank" className='w-8 md:w-6' > <GithubIcon /> </Link>
+                    <Link href={link} target="_blank" className='flex items-center rounded-md bg-primary text-light hover:bg-transparent p-1 px-6 text-sm  hover:bg-primary border-2 border-solid border-primary hover:text-primary md:p-2 md:px-4 md:text-base duration-700 font-[10] tracking-[0.075rem]' > Visit </Link>
+                    <Link href={github} target="_blank" className='w-8 md:w-6' > <GithubIcon /> </Link>
                 </div>
             </div>
         </article>
@@ -89,23 +87,31 @@ const project = () => {
             <ParticleContainer />
             <main className='w-full flex flex-col items-center justify-center bgProject bg-fixed'>
                 <Layout className='pt-32 '>
-                    <AnimatedText text="Imagination Trumps Knowledge!" className='my-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
+                    <AnimatedText text="Exploring AR/VR Horizons!" className='my-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl' />
 
                     <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-8'>
                         <div className='col-span-12'>
-                            <FeaturedProject type="APOGEE 2023" title="Decrypt" summary="A website designed for the pre-APOGEE 2023 event by Coding Club BITSP, in which participants type their input and get output, after which they must write right code to obtain such result. I contributed by integrating backend, changing UI and fixing many bugs. (Note: Currently backend server is down)" img={decrypt} link="https://decrypt-bits.tech" github="https://github.com/Surajpverma/ReverseCoding" />
+                            <FeaturedProject
+                                type="Talk Session"
+                                title="Extended Reality"
+                                summary="An educational event on Extended Reality (XR) technology was a success, featuring discussions on basics, applications, success stories, motivation, coding tools, best practices, and challenging problems. The event expanded our understanding of the potential of AR/VR."
+                                img={event1}
+                                link="https://drive.google.com/file/d/1FgmlWu6GiPfdxaDTISJuLLgIu98vpqCH/view?pli=1"
+                                sourceLink="https://www.linkedin.com/feed/update/urn:li:activity:7071875912685821952?utm_source=share&utm_medium=member_desktop"
+                                button="Recording"
+                                source="linkedin" />
                         </div>
                         <div className=' col-span-6 sm:col-span-12'>
                             <Projects type="Clone" title="Netflix Clone with Firebase Authentication" img={netflix} github="https://github.com/Surajpverma/netflix-clone.git" link="https://netflix-clone-spv.netlify.app" />
                         </div>
                         <div className=' col-span-6 sm:col-span-12'>
-                        <Projects type="Frotend" title="Fully Responsive Portfolio" summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
+                            <Projects type="Frotend" title="Fully Responsive Portfolio" summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                             It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                             local currency." img={pf} link="/" github="https://github.com/Surajpverma/Portfolio" />
                         </div>
-                        <div className='col-span-12'>
+                        {/* <div className='col-span-12'>
                         <FeaturedProject type="Frotend" title="--Will be revealed soon--" summary="I am working on this project for Coding Club." img={electives} link="/" github="www.github.com" />
-                        </div>
+                        </div> */}
                     </div>
                 </Layout>
                 <Layout>
