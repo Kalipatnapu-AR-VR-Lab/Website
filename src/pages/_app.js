@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }) {
           media="(prefers-color-scheme: light)"
         />
       </Head>
-      <main className={`w-full min-h-screen bg-home bg-no-repeat`}>
+      <main className={`w-full min-h-screen bg-home bg-no-repeat scroll-smooth`}>
         <Navbar />
         <AnimatePresence mode='wait'>
           <Component key={router.asPath} {...pageProps} />

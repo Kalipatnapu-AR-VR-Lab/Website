@@ -37,10 +37,10 @@ export default function Home() {
             </div>
           </Layout>
 
-          <Batch />
 
         </main>
       </div>
+          <Batch />
 
     </>
   )

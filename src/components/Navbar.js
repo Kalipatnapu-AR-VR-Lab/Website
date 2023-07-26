@@ -63,10 +63,10 @@ const Navbar = () => {
     return (
         <header className={`w-full px-32 font-bold flex items-center justify-between z-10 lg:px-16 md:px-12 sm:px-8 border-b-[0.5px] lg:border-none border-dark/80 fixed top-0 duration-300  ${isShrunk ? "py-8" : "py-4 glassbg"}`}>
 
-            <button className='flex-col items-center justify-cente hidden lg:flex' onClick={handleClick}>
-                <span className={` bg-dark dark:bg-light block duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
+            <button className='flex-col items-center justify-cente hidden lg:flex z-40' onClick={handleClick}>
+                <span className={` bg-dark dark:bg-light block duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1 bg-light' : '-translate-y-0.5'}`}></span>
                 <span className={` bg-dark dark:bg-light duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-                <span className={` bg-dark dark:bg-light duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
+                <span className={` bg-dark dark:bg-light duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1 bg-light' : 'translate-y-0.5'}`}></span>
             </button>
 
             {/* desktop */}
@@ -94,7 +94,7 @@ const Navbar = () => {
 
             {/* mobile */}
             {
-                isOpen ? <motion.div initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }} animate={{ scale: 1, opacity: 1 }} className=' min-w-[70vw] flex flex-col items-center justify-between fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-90 bg-dark/90 dark:bg-light/75 backdrop-blur-md py-32 '>
+                isOpen ? <motion.div initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className=' min-w-[100vw] min-h-screen flex flex-col items-center justify-between fixed  z-90 bg-dark/90 dark:bg-light/75 backdrop-blur-md py-32 top-0 left-0'>
                     <nav className='flex items-center justify-center flex-col'>
                         <CustomMobileLink href="/" title="Home" className='' toggle={handleClick} />
                         <CustomMobileLink href="/about" title="About" className='' toggle={handleClick} />
@@ -107,7 +107,7 @@ const Navbar = () => {
                         <motion.a href="https://www.linkedin.com/in/surajpverma/" target={"_blank"} whileHover={{ y: -2 }} className='w-6 mx-3 sm:mx-1' whileTap={{ scale: 0.7 }}><LinkedInIcon /> </motion.a>
 
                         <button
-                            className={`ml-2 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-yellow-200" : "bg-light text-blue-900"}`}
+                            className={`ml-2 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
                             onClick={() => setMode(mode === "light" ? "dark" : "light")} >
                             {
                                 mode === "dark" ? <SunIcon className={"fill-dark"} /> : <MoonIcon className={"fill-dark"} />
