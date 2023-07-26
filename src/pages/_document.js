@@ -3,7 +3,7 @@ import Script from 'next/script'
 
 export default function Document() {
   return (
-    <Html lang="en" style={{scrollBehavior:'smooth'}}>
+    <Html lang="en" style={{ scrollBehavior: 'smooth' }}>
       <Head />
       <body className='bg-light dark:bg-dark'>
         <Script id='theme-switcher' strategy="beforeInteractive">
