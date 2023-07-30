@@ -188,8 +188,8 @@ const contact = () => {
         <Image src={team} className='object-cover h-full w-full'/>
       </div>
 
-      <main className='flex w-full flex-col items-center justify-center  bg-cover bg-top bg-fixed relative'>
-        <Layout className='pt-32 card'>
+      <main className='flex w-full flex-col items-center justify-center'>
+        <Layout className='pt-32'>
 
 
           <AnimatedText text="Visionaries in Unity!" className='my-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 ' />
