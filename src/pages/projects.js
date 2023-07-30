@@ -13,6 +13,7 @@ import Events from '@/components/Events'
 import Publications from '@/components/Publications'
 import ParticleContainer from '@/components/ParticleContainer'
 
+import projects from '../../public/images/backgrounds/projects.jpg'
 import event1 from '../../public/images/projects/event1.jpeg'
 
 const FramerImage = motion(Image)
@@ -83,6 +84,10 @@ const project = () => {
             </Head>
 
             <TransitionEffect />
+
+            <div className='w-screen h-screen -z-50 fixed overflow-hidden'>
+                <Image src={projects} className='object-cover object-top h-full w-full' />
+            </div>
 
             <ParticleContainer />
             <main className='w-full flex flex-col items-center justify-center bg-projects bg-top bg-cover bg-fixed'>

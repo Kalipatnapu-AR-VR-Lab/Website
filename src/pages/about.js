@@ -1,9 +1,8 @@
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 import Tilt from 'react-parallax-tilt'
 
@@ -11,6 +10,9 @@ import ck from '../../public/images/ck.png'
 import Education from '@/components/Education'
 import Facilities from '@/components/Facilities'
 import Gallery from '@/components/Gallery'
+import Link from 'next/link'
+import aboutUs from '../../public/images/backgrounds/about.jpg'
+import overview from '../../public/images/backgrounds/overview.jpeg'
 
 const about = () => {
     return (
@@ -20,11 +22,19 @@ const about = () => {
                 <meta name="description" content="later" />
             </Head>
             <TransitionEffect />
+
+            <div className='w-screen h-screen -z-50 fixed overflow-hidden'>
+                <Image src={aboutUs} className='object-cover h-full w-full top-0 absolute' />
+            </div>
+
             <main className='flex w-full flex-col items-center justify-center bg-overview bg-cover bg-right bg-fixed'>
                 <Layout className='pt-32 glassbg'>
+                    <Image src={overview} className='absolute top-0 left-0 object-cover h-full w-full -z-40' />
+                    <div className='absolute top-0 left-0 object-cover h-full w-full -z-30 glassbg'></div>
                     <AnimatedText text="OVERVIEW !" className='my-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 ' />
                     <div className='grid w-full grid-cols-8 gap-16 sm:gap-8 '>
-                        <div className=' col-span-5 flex flex-col items-start justify-start xl:col-span-5 md:order-2 md:col-span-8'> <h2 className='mb-4 text-2xl font-bold uppercase dark:text-primaryDark text-primary heading tracking-widest'>ABOUT US</h2>
+                        <div className=' col-span-5 flex flex-col items-start justify-start xl:col-span-5 md:order-2 md:col-span-8'>
+                            <h2 className='mb-4 text-2xl font-bold uppercase dark:text-primaryDark text-primary heading tracking-widest'>ABOUT US</h2>
                             <p className='font-medium first-letter:float-left 
                                 first-letter:mr-2
                                 first-letter:text-5xl 

@@ -10,7 +10,7 @@ import suraj from "../../public/images/team/suraj.png"
 import ck from '../../public/images/ck.png'
 import ParticleContainer from '@/components/ParticleContainer';
 import Image from 'next/image';
-import team from "../../public/images/backgrounds/team.jpg"
+import team from "../../public/images/backgrounds/team.jpeg"
 
 
 
