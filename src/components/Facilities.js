@@ -1,6 +1,7 @@
 import React from 'react'
 import AnimatedText from './AnimatedText'
 import { motion } from 'framer-motion'
+import { fadeAnimation, slideAnimation } from './motion'
 
 
 const Facilities = () => {
@@ -10,15 +11,15 @@ const Facilities = () => {
 
       <div className='flex w-full items-center justify-between py-4 md:flex-col gap-4'>
 
-        <div className='py-8 w-[48%] h-auto glassmorphism aspect-video flex flex-col items-center justify-center md:w-full '>
+        <motion.div className='py-8 w-[48%] h-auto glassmorphism aspect-video flex flex-col items-center justify-center md:w-full' {...slideAnimation("left", 0.5)}>
           <AnimatedText text="STATE-OF-THE-ART SETUP" className='mb-16 !text-5xl xs:!text-4xl sm:mb-8' />
-          <p className='text-2xl md:text-xl font-medium mb-16 text-center w-[95%]'>Elevate your AR/VR encounters to new heights, amplifying every moment with technological marvels.</p>
-        </div>
+          <motion.p className='text-2xl md:text-xl font-medium mb-16 text-center w-[95%]' {...slideAnimation("left",0.6)}>Elevate your AR/VR encounters to new heights, amplifying every moment with technological marvels.</motion.p>
+        </motion.div>
 
-        <div className='pt-8 w-[48%] h-auto glassmorphism aspect-video flex flex-col items-center justify-center md:w-full '>
+        <motion.div className='pt-8 w-[48%] h-auto glassmorphism aspect-video flex flex-col items-center justify-center md:w-full' {...slideAnimation("right", 0.5)}>
           <AnimatedText text="IMMERSIVE GEAR HAVEN" className='mb-16 !text-5xl xs:!text-4xl sm:mb-8 ' />
-          <p className='text-2xl md:text-xl font-medium mb-16 text-center w-[95%]'> Explore a vast array of advanced equipment and innovative gadgets, designed to elevate your AR/VR journey. Unleash limitless possibilities and experience the extraordinary with us. </p>
-        </div>
+          <motion.p className='text-2xl md:text-xl font-medium mb-16 text-center w-[95%]' {...slideAnimation("rigth", 0.6)}> Explore a vast array of advanced equipment and innovative gadgets, designed to elevate your AR/VR journey. Unleash limitless possibilities and experience the extraordinary with us. </motion.p>
+        </motion.div>
         
       </div>
     </main>

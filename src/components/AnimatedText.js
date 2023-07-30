@@ -9,7 +9,7 @@ const qoute = {
     animate: {
         opacity: 1,
         transition: {
-            delay: 1,
+            delay: 2,
             staggerChildren: 0.08,
         }
     }

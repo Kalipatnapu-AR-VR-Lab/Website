@@ -4,13 +4,14 @@ import { GithubIcon, LinkedInIcon } from './Icons'
 import Link from 'next/link'
 import Image from 'next/image'
 import Tilt from 'react-parallax-tilt'
+import { HeadAnimation } from './motion'
 
 
 const Team = ({ name, role, linkedIn, link, image }) => {
 
     return (
         <Tilt>
-            <motion.div className='group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-dark/30 glassmorphism h-64 w-48 xs:h-48 xs:w-36'>
+            <motion.div className='group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-dark/30 glassmorphism h-64 w-48 xs:h-48 xs:w-36' {...HeadAnimation("up", 0.2)}>
                 <div class="h-64 w-48 xs:h-48 xs:w-36 p-4">
                     <Image class="h-full w-full object-cover transition-transform duration-500" src={image} alt={name} />
                 </div>

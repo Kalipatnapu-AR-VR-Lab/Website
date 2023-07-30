@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 
 import { GithubIcon, InstagramIcon, LinkedInIcon } from '../components/Icons'
 import useThemeSwitcher from './hooks/useThemeSwitcher'
+import { fadeAnimation } from './motion'
 
 const CustomLink = ({ href, title, className = "" }) => {
     const router = useRouter()
@@ -36,7 +37,6 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
 
 const Navbar = () => {
 
-    const [mode, setMode] = useThemeSwitcher();
     const [isOpen, setIsOpen] = useState(false)
     const [isShrunk, setShrunk] = useState(true)
 
@@ -61,7 +61,7 @@ const Navbar = () => {
     }, [])
 
     return (
-        <header className={`w-full px-32 font-bold flex items-center justify-between z-20 lg:px-16 md:px-12 sm:px-8 border-b-[0.5px] lg:border-none border-dark/80 fixed top-0 duration-300  ${isShrunk ? "py-8" : "py-4 glassbg"}`}>
+        <motion.header className={`w-full px-32 font-bold flex items-center justify-between z-20 lg:px-16 md:px-12 sm:px-8 border-b-[0.5px] lg:border-none border-dark/80 fixed top-0 duration-300  ${isShrunk ? "py-8" : "py-4 glassbg"}`} {...fadeAnimation}>
 
             <button className='flex-col items-center justify-cente hidden lg:flex z-40' onClick={handleClick}>
                 <span className={` bg-dark block duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1 bg-light' : '-translate-y-0.5'}`}></span>
@@ -104,7 +104,7 @@ const Navbar = () => {
             }
 
 
-        </header>
+        </motion.header>
     )
 }
 

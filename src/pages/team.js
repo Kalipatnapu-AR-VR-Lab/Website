@@ -11,6 +11,8 @@ import ck from '../../public/images/ck.png'
 import ParticleContainer from '@/components/ParticleContainer';
 import Image from 'next/image';
 import team from "../../public/images/backgrounds/team.jpeg"
+import { fadeAnimation, slideAnimation } from '@/components/motion';
+import Batch from '@/components/Batch';
 
 
 
@@ -244,12 +246,12 @@ const contact = () => {
         <Image src={team} className='object-cover h-full w-full' />
       </div>
 
-      <main className='flex w-full flex-col items-center justify-center'>
+      <main className='flex w-full flex-col items-center justify-center overflow-hidden'>
         <Layout className='pt-32'>
 
 
           <AnimatedText text="Visionaries in Unity!" className='my-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 ' />
-          <p className='text-2xl md:text-xl font-medium mb-16 text-center'> Embark on an awe-inspiring voyage through the veil of reality with our team of tech sorcerers and art visionaries, where imagination and innovation converge to craft immersive worlds beyond imagination. 🚀🎨🌌 </p>
+          <motion.p className='text-2xl md:text-xl font-medium mb-16 text-center' {...slideAnimation("up", 0.7)}> Embark on an awe-inspiring voyage through the veil of reality with our team of tech sorcerers and art visionaries, where imagination and innovation converge to craft immersive worlds beyond imagination. 🚀🎨🌌 </motion.p>
 
           <AnimatedText text="Faculty Mentors" className='my-16 !text-6xl sm:!text-4xl xs:!text-4xl sm:mb-8 ' />
           <div className='flex items-center justify-center gap-6' >
@@ -317,6 +319,7 @@ const contact = () => {
 
         </Layout>
       </main>
+      <Batch />
     </>
   )
 }
