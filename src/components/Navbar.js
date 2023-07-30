@@ -81,6 +81,7 @@ const Navbar = () => {
                 <nav className='flex items-center justify-center flex-wrap'>
                     <motion.a href="https://github.com/Surajpverma" target={"_blank"} whileHover={{ y: -2 }} className='w-6 mx-3' whileTap={{ scale: 0.7 }}><GithubIcon /> </motion.a>
                     <motion.a href="https://www.linkedin.com/company/kalipatnapu-arvr-lab/" target={"_blank"} whileHover={{ y: -2 }} className='w-6 mx-3' whileTap={{ scale: 0.7 }}><LinkedInIcon /> </motion.a>
+                    
 
                     <button
                         className={`ml-2 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-yellow-200" : "bg-light text-blue-900"}`}
