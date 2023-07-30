@@ -96,26 +96,19 @@ const projectTeam = [
 const researchTeam = [
   {
     name: "Aryan Bakshi",
-    role: "Research Team",
+    role: "Research Lead",
     linkedIn: "/",
     link: "/",
     image: ck
   },
   {
-    name: "Utkarsh Tiwari",
+    name: "Rachit Gandhi",
     role: "Research Team",
     linkedIn: "/",
     link: "/",
     image: ck
   }, {
-    name: "Aviral Gupta",
-    role: "Research Team",
-    linkedIn: "/",
-    link: "/",
-    image: ck
-  },
-  {
-    name: "Rachit Gandi",
+    name: "Ashwin Piyush",
     role: "Research Team",
     linkedIn: "/",
     link: "/",
@@ -129,7 +122,70 @@ const researchTeam = [
     image: ck
   },
   {
+    name: "Aditya Dandwate",
+    role: "Research Team",
+    linkedIn: "/",
+    link: "/",
+    image: ck
+  },
+  {
+    name: "Aadeesh Garg",
+    role: "Research Team",
+    linkedIn: "/",
+    link: "/",
+    image: ck
+  },
+  {
+    name: "Aryan Seth",
+    role: "Research Team",
+    linkedIn: "/",
+    link: "/",
+    image: ck
+  },
+  {
+    name: "Utkarsh Tiwari",
+    role: "Research Team",
+    linkedIn: "/",
+    link: "/",
+    image: ck
+  },
+  {
+    name: "Kalpana Panda",
+    role: "Research Team",
+    linkedIn: "/",
+    link: "/",
+    image: ck
+  },
+  {
+    name: "Yatharth Singh",
+    role: "Research Team",
+    linkedIn: "/",
+    link: "/",
+    image: ck
+  },
+  {
+    name: "Siddhartha Gotur",
+    role: "Research Team",
+    linkedIn: "/",
+    link: "/",
+    image: ck
+  },
+  {
     name: "Ameesh Sethi",
+    role: "Research Team",
+    linkedIn: "/",
+    link: "/",
+    image: ck
+  },
+  {
+    name: "Aviral Gupta",
+    role: "Research Team",
+    linkedIn: "/",
+    link: "/",
+    image: ck
+  },
+  {
+    name: "Gobind Singh",
     role: "Research Team",
     linkedIn: "/",
     link: "/",
@@ -166,8 +222,8 @@ const facultyTeam = [
     image: ck
   },
   {
-    name: "Dr. Kamlesh Tiwari",
-    role: "Ashutosh Bhatia",
+    name: "Dr. Ashutosh Bhatia",
+    role: "Faculty Mentor",
     linkedIn: "/",
     link: "/",
     image: ck
@@ -185,7 +241,7 @@ const contact = () => {
       <TransitionEffect />
       <ParticleContainer />
       <div className='w-screen h-screen -z-50 fixed overflow-hidden'>
-        <Image src={team} className='object-cover h-full w-full'/>
+        <Image src={team} className='object-cover h-full w-full' />
       </div>
 
       <main className='flex w-full flex-col items-center justify-center'>
@@ -221,18 +277,6 @@ const contact = () => {
 
           </div>
 
-          <AnimatedText text="Research Team" className='my-16 !text-6xl sm:!text-4xl xs:!text-4xl sm:mb-8 ' />
-          <div className='grid grid-cols-5 items-center gap-4 gap-y-10 justify-center md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4' >
-
-            {
-              researchTeam.map((member) => {
-                return (
-                  <Team name={member.name} role={member.role} linkedIn={member.linkedIn} link={member.link} image={member.image} key={member.name} />
-                )
-              })
-            }
-          </div>
-
           <AnimatedText text="WebDev Team" className='my-16 !text-6xl sm:!text-4xl xs:!text-4xl sm:mb-8 ' />
           <div className='flex items-center justify-center' >
 
@@ -259,6 +303,17 @@ const contact = () => {
 
           </div>
 
+          <AnimatedText text="Research Team" className='my-16 !text-6xl sm:!text-4xl xs:!text-4xl sm:mb-8 ' />
+          <div className='grid grid-cols-5 items-center gap-4 gap-y-10 justify-center md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4' >
+
+            {
+              researchTeam.map((member) => {
+                return (
+                  <Team name={member.name} role={member.role} linkedIn={member.linkedIn} link={member.link} image={member.image} key={member.name} />
+                )
+              })
+            }
+          </div>
 
         </Layout>
       </main>
