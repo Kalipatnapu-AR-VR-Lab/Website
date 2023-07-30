@@ -9,6 +9,8 @@ import Team from '@/components/Team';
 import suraj from "../../public/images/team/suraj.png"
 import ck from '../../public/images/ck.png'
 import ParticleContainer from '@/components/ParticleContainer';
+import Image from 'next/image';
+import team from "../../public/images/backgrounds/team.jpg"
 
 
 
@@ -182,9 +184,11 @@ const contact = () => {
 
       <TransitionEffect />
       <ParticleContainer />
-      <div className='w-screen h-screen bg-team bg-cover bg-fixed fixed top-0 -z-50'></div>
+      <div className='w-screen h-screen -z-50 fixed overflow-hidden'>
+        <Image src={team} className='object-cover h-full w-full'/>
+      </div>
 
-      <main className='flex w-full flex-col items-center justify-center  bg-cover bg-top bg-fixed'>
+      <main className='flex w-full flex-col items-center justify-center  bg-cover bg-top bg-fixed relative'>
         <Layout className='pt-32 card'>
 
 

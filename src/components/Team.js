@@ -19,7 +19,7 @@ const Team = ({ name, role, linkedIn, link, image }) => {
                 <div class="absolute inset-0 flex translate-y-[55%] flex-col items-center justify-center px-4 text-center transition-all duration-500 group-hover:translate-y-0 hover:glassbg">
                     <h1 class=" text-xl font-bold text-light"> {name} </h1>
                     <p class="mb-3 text-lg italic text-light opacity-0 transition-opacity duration-300 group-hover:opacity-100"> {role} </p>
-                    <div className='flex gap-4 py-4'>
+                    <div className='flex gap-4 py-2'>
                         <Link href={linkedIn} target="_blank" className='w-10 rounded-full bg-light xs:w-6' > <GithubIcon /> </Link>
                         <Link href={link} target="_blank" className='w-10 xs:w-6' > <LinkedInIcon /> </Link>
                     </div>

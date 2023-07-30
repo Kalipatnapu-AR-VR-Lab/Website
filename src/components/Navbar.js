@@ -38,7 +38,7 @@ const Navbar = () => {
 
     const [mode, setMode] = useThemeSwitcher();
     const [isOpen, setIsOpen] = useState(false)
-    const [isShrunk, setShrunk] = useState(false)
+    const [isShrunk, setShrunk] = useState(true)
 
     const handleClick = () => {
         setIsOpen(!isOpen)
