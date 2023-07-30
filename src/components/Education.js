@@ -12,7 +12,7 @@ const FramerImage = motion(Image)
 const Featured = ({ type, title, summary, img, link }) => {
 
   return (
-    <article className='w-full flex justify-between items-center border border-solid border-dark glassmorphism shadow-2xl p-12 relative  dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:ronded-2xl xs:p-2 m-0'>
+    <article className='w-full flex justify-between items-center border border-solid border-dark glassmorphism shadow-2xl p-12 relative lg:flex-col lg:p-8 xs:ronded-2xl xs:p-2 m-0'>
       <Link href={link} target="_blank" className='w-1/2 cursor-pointer overflow-hidden  lg:w-full' >
         <FramerImage src={img} alt={title} className="w-full h-auto"
           whileHover={{ scale: 1.05 }}
@@ -23,13 +23,13 @@ const Featured = ({ type, title, summary, img, link }) => {
               50vw' />
       </Link>
       <div className=' w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6'>
-        <span className=' dark:text-primary font-medium text-xl text-primaryDark xs:text-base'>
+        <span className='font-medium text-xl text-primaryDark xs:text-base'>
           {type}
         </span>
         <Link href={link} target="_blank"  >
           <h2 className='my-2 w-full text-left text-4xl font-bold hover:underline hover:underline-offset-2'>{title}</h2>
         </Link>
-        <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
+        <p className='my-2 font-medium text-dark sm:text-sm'>{summary}</p>
         
       </div>
     </article>

@@ -22,7 +22,7 @@ const FramerImage = motion(Image)
 const FeaturedProject = ({ type, title, summary, img, link, sourceLink, button, source }) => {
 
     return (
-        <article className='w-full flex justify-between items-center border border-solid border-dark glassmorphism shadow-2xl p-12 relative  dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:ronded-2xl xs:p-4 xs:w-[90%] m-0'>
+        <article className='w-full flex justify-between items-center border border-solid border-dark glassmorphism shadow-2xl p-12 relative lg:flex-col lg:p-8 xs:ronded-2xl xs:p-4 xs:w-[90%] m-0'>
             <Link href={link} target="_blank" className='w-1/2 cursor-pointer overflow-hidden  lg:w-full' >
                 <FramerImage src={img} alt={title} className="w-full h-auto"
                     whileHover={{ scale: 1.05 }}
@@ -33,13 +33,13 @@ const FeaturedProject = ({ type, title, summary, img, link, sourceLink, button, 
                 50vw' />
             </Link>
             <div className=' w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6'>
-                <span className=' dark:text-primary font-medium text-xl text-primaryDark xs:text-base'>
+                <span className='font-medium text-xl text-primaryDark xs:text-base'>
                     {type}
                 </span>
                 <Link href={link} target="_blank"  >
                     <h2 className='my-2 w-full text-left text-4xl font-bold hover:underline hover:underline-offset-2'>{title}</h2>
                 </Link>
-                <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
+                <p className='my-2 font-medium text-dark sm:text-sm'>{summary}</p>
                 <div className='mt-2 flex items-center'>
                     <Link href={sourceLink} target="_blank" className='w-10' > {source ? <LinkedInIcon /> : <GithubIcon />} </Link>
                     <Link href={link} target="_blank" className=' mx-4 flex items-center rounded-md bg-primary text-light hover:bg-transparent p-2 px-6 text-lg border-2 border-primary border-solid  hover:text-primary md:p-2 md:px-4 md:text-base duration-500 font-[50] tracking-[0.075rem]' > {button} </Link>
@@ -52,7 +52,7 @@ const FeaturedProject = ({ type, title, summary, img, link, sourceLink, button, 
 const Projects = ({ title, type, img, link, github }) => {
 
     return (
-        <article className='w-full flex justify-center items-center border border-solid border-dark glassmorphism bg-light shadow-2xl p-6 relative flex-col dark:bg-dark dark:border-light xs:p-4 xs:w-[90%]'>
+        <article className='w-full flex justify-center items-center border border-solid border-dark glassmorphism bg-light shadow-2xl p-6 relative flex-col xs:p-4 xs:w-[90%]'>
             <Link href={link} target="_blank" className='w-full cursor-pointer overflow-hidden' >
                 <FramerImage src={img} alt={title} className="w-full h-auto"
                     whileHover={{ scale: 1.05 }}
@@ -60,7 +60,7 @@ const Projects = ({ title, type, img, link, github }) => {
                     transition={{ duration: 0.2 }} />
             </Link>
             <div className='w-full flex flex-col items-start justify-between mt-4'>
-                <span className=' dark:text-primary font-medium text-xl text-primaryDark lg:text-lg md:text-base'>
+                <span className='font-medium text-xl text-primaryDark lg:text-lg md:text-base'>
                     {type}
                 </span>
                 <Link href={link} target="_blank"  >

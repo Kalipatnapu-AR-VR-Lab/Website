@@ -37,8 +37,8 @@ export default function Home() {
                   </p>
 
                   <div className='flex item-center self-start mt-4 lg:self-center'>
-                    <Link href="/resume.pdf" target={"_blank"} className='flex items-center rounded-md bg-primary text-light hover:bg-transparent p-2 px-6 text-lg border-2 border-primary border-solid  hover:text-primary md:p-2 md:px-4 md:text-base duration-500 font-[50] tracking-[0.075rem] ' download={true}>More<LinkArrow className="w-6 ml-1" /> </Link>
-                    <Link href="/contact" target={"_blank"} className='m-4 ml-6 text-lg  capitalize text-dark hover:text-primary underline underline-offset-4 dark:text-light md:text-base font-[50] tracking-[0.075rem] duration-500'>contact</Link>
+                    <Link href="/about" className='flex items-center rounded-md bg-primary text-light hover:bg-transparent p-2 px-6 text-lg border-2 border-primary border-solid  hover:text-primary md:p-2 md:px-4 md:text-base duration-500 font-[50] tracking-[0.075rem]' >More<LinkArrow className="w-6 ml-1" /> </Link>
+                    <Link href="/contact" target={"_blank"} className='m-4 ml-6 text-lg  capitalize text-dark hover:text-primary underline underline-offset-4 md:text-base font-[50] tracking-[0.075rem] duration-500'>contact</Link>
                   </div>
                 </div>
             </div>

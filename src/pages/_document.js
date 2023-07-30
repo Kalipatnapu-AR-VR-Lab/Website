@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html lang="en" style={{ scrollBehavior: 'smooth' }}>
       <Head />
-      <body className='bg-light dark:bg-dark'>
+      <body className='bg-light'>
         <Script id='theme-switcher' strategy="beforeInteractive">
           {`if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
   document.documentElement.classList.add('dark')
