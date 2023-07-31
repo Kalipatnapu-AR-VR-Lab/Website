@@ -11,9 +11,25 @@ import ck from '../../public/images/ck.png'
 import ParticleContainer from '@/components/ParticleContainer';
 import Image from 'next/image';
 import team from "../../public/images/backgrounds/team.jpeg"
-import Batch from '@/components/Batch';
+import { slideAnimation } from '@/components/motion';
 
 
+const coreTeam = [
+  {
+    name: "Varun Sahani",
+    role: "President",
+    linkedIn: "/",
+    link: "/",
+    image: ck
+  },
+  {
+    name: "Aryan Bakshi",
+    role: "Coordinator",
+    linkedIn: "/",
+    link: "/",
+    image: ck
+  },
+]
 
 const projectTeam = [
   {
@@ -95,13 +111,6 @@ const projectTeam = [
 ]
 
 const researchTeam = [
-  {
-    name: "Aryan Bakshi",
-    role: "Research Lead",
-    linkedIn: "/",
-    link: "/",
-    image: ck
-  },
   {
     name: "Rachit Gandhi",
     role: "Research Team",
@@ -257,6 +266,19 @@ const contact = () => {
 
             {
               facultyTeam.map((member) => {
+                return (
+                  <Team name={member.name} role={member.role} linkedIn={member.linkedIn} link={member.link} image={member.image} key={member.name} />
+                )
+              })
+            }
+
+          </div>
+
+          <AnimatedText text="Core Team Mentors" className='my-16 !text-6xl sm:!text-4xl xs:!text-4xl sm:mb-8 ' />
+          <div className='flex items-center justify-center gap-6' >
+
+            {
+              coreTeam.map((member) => {
                 return (
                   <Team name={member.name} role={member.role} linkedIn={member.linkedIn} link={member.link} image={member.image} key={member.name} />
                 )
