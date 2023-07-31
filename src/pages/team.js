@@ -8,7 +8,7 @@ import Team from '@/components/Team';
 
 import suraj from "../../public/images/team/suraj.png"
 import ck from '../../public/images/ck.png'
-import kt from '../../public/images/kt.png'
+import kt from '../../public/images/kt.jpeg'
 import ab from '../../public/images/ab.jpeg'
 import ParticleContainer from '@/components/ParticleContainer';
 import Image from 'next/image';
