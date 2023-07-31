@@ -79,7 +79,7 @@ const Navbar = () => {
                 </nav>
 
                 <nav className='flex items-center justify-center flex-wrap'>
-                    <motion.a href="https://github.com/Surajpverma" target={"_blank"} whileHover={{ y: -2 }} className='w-6 mx-3' whileTap={{ scale: 0.7 }}><GithubIcon /> </motion.a>
+                    <motion.a href="https://www.linkedin.com/company/kalipatnapu-arvr-lab/" target={"_blank"} whileHover={{ y: -2 }} className='w-6 mx-3' whileTap={{ scale: 0.7 }}><GithubIcon /> </motion.a>
                     <motion.a href="https://www.linkedin.com/company/kalipatnapu-arvr-lab/" target={"_blank"} whileHover={{ y: -2 }} className='w-6 mx-3' whileTap={{ scale: 0.7 }}><LinkedInIcon /> </motion.a>
                     <motion.a href="https://www.linkedin.com/company/kalipatnapu-arvr-lab/" target={"_blank"} whileHover={{ y: -2 }} className='w-8 ml-3' whileTap={{ scale: 0.7 }}> <InstagramIcon /> </motion.a>
                 </nav>
@@ -96,9 +96,9 @@ const Navbar = () => {
                     </nav>
 
                     <nav className='flex items-center justify-center flex-wrap mt-2'>
-                        <motion.a href="https://github.com/Surajpverma" target={"_blank"} whileHover={{ y: -2 }} className='w-6 mx-3 bg-light rounded-full' whileTap={{ scale: 0.7 }}><GithubIcon /> </motion.a>
-                        <motion.a href="https://www.linkedin.com/in/surajpverma/" target={"_blank"} whileHover={{ y: -2 }} className='w-6 mx-3 ' whileTap={{ scale: 0.7 }}><LinkedInIcon /> </motion.a>
-                        <motion.a href="https://www.linkedin.com/in/surajpverma/" target={"_blank"} whileHover={{ y: -2 }} className='w-8 mx-3 ' whileTap={{ scale: 0.7 }}> <InstagramIcon /> </motion.a>
+                        <motion.a href="https://www.linkedin.com/company/kalipatnapu-arvr-lab/" target={"_blank"} whileHover={{ y: -2 }} className='w-6 mx-3 bg-light rounded-full' whileTap={{ scale: 0.7 }}><GithubIcon /> </motion.a>
+                        <motion.a href="https://www.linkedin.com/company/kalipatnapu-arvr-lab/" target={"_blank"} whileHover={{ y: -2 }} className='w-6 mx-3 ' whileTap={{ scale: 0.7 }}><LinkedInIcon /> </motion.a>
+                        <motion.a href="https://www.linkedin.com/company/kalipatnapu-arvr-lab/" target={"_blank"} whileHover={{ y: -2 }} className='w-8 mx-3 ' whileTap={{ scale: 0.7 }}> <InstagramIcon /> </motion.a>
                     </nav>
                 </motion.div> : null
             }
