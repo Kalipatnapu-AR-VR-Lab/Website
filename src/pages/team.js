@@ -11,7 +11,6 @@ import ck from '../../public/images/ck.png'
 import ParticleContainer from '@/components/ParticleContainer';
 import Image from 'next/image';
 import team from "../../public/images/backgrounds/team.jpeg"
-import { fadeAnimation, slideAnimation } from '@/components/motion';
 import Batch from '@/components/Batch';
 
 
@@ -319,7 +318,6 @@ const contact = () => {
 
         </Layout>
       </main>
-      <Batch />
     </>
   )
 }

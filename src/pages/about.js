@@ -14,7 +14,7 @@ import Gallery from '@/components/Gallery'
 import aboutUs from '../../public/images/backgrounds/about.jpg'
 import overview from '../../public/images/backgrounds/overview.jpeg'
 import { HeadAnimation, slideAnimation } from '@/components/motion'
-import Batch from '@/components/Batch'
+
 
 const about = () => {
     return (
@@ -59,7 +59,7 @@ const about = () => {
                 <Facilities />
                 <Gallery />
             </Layout>
-            <Batch />
+            
         </>
     )
 }

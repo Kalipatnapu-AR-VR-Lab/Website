@@ -4,7 +4,6 @@ import Link from 'next/link'
 import AnimatedText from '@/components/AnimatedText'
 import { LinkArrow } from '@/components/Icons'
 import TransitionEffect from '@/components/TransitionEffect'
-import Batch from '@/components/Batch'
 import ParticleContainer from '@/components/ParticleContainer'
 import Image from 'next/image'
 import home from '../../public/images/backgrounds/home1.jpg'
@@ -49,7 +48,6 @@ export default function Home() {
 
         </main>
       </div>
-          <Batch />
 
     </>
   )

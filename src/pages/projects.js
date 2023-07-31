@@ -16,7 +16,6 @@ import ParticleContainer from '@/components/ParticleContainer'
 import projects from '../../public/images/backgrounds/projects.jpg'
 import event1 from '../../public/images/projects/event1.jpeg'
 import { fadeAnimation, slideAnimation, HeadAnimation } from '@/components/motion'
-import Batch from '@/components/Batch'
 
 const FramerImage = motion(Image)
 
@@ -126,7 +125,6 @@ const project = () => {
                     <Publications />
                 </Layout>
             </main>
-            <Batch />
         </div>
     )
 }
