@@ -7,7 +7,7 @@ import TransitionEffect from '@/components/TransitionEffect'
 import Tilt from 'react-parallax-tilt'
 import { motion } from 'framer-motion'
 
-import ck2 from '../../public/images/ck2.png'
+import ck2 from '../../public/images/ck2.jpeg'
 import Education from '@/components/Education'
 import Facilities from '@/components/Facilities'
 import Gallery from '@/components/Gallery'
