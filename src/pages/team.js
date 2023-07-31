@@ -288,6 +288,18 @@ const contact = () => {
 
           </div>
 
+          <AnimatedText text="Research Team" className='my-16 !text-6xl sm:!text-4xl xs:!text-4xl sm:mb-8 ' />
+          <div className='grid grid-cols-5 items-center gap-4 gap-y-10 justify-center md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4' >
+
+            {
+              researchTeam.map((member) => {
+                return (
+                  <Team name={member.name} role={member.role} linkedIn={member.linkedIn} link={member.link} image={member.image} key={member.name} />
+                )
+              })
+            }
+          </div>
+          
           <AnimatedText text="Project Team" className='my-16 !text-6xl sm:!text-4xl xs:!text-4xl sm:mb-8 ' />
           <div className='grid grid-cols-5 items-center gap-4 gap-y-10 justify-center md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4' >
 
@@ -327,17 +339,6 @@ const contact = () => {
 
           </div>
 
-          <AnimatedText text="Research Team" className='my-16 !text-6xl sm:!text-4xl xs:!text-4xl sm:mb-8 ' />
-          <div className='grid grid-cols-5 items-center gap-4 gap-y-10 justify-center md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4' >
-
-            {
-              researchTeam.map((member) => {
-                return (
-                  <Team name={member.name} role={member.role} linkedIn={member.linkedIn} link={member.link} image={member.image} key={member.name} />
-                )
-              })
-            }
-          </div>
 
         </Layout>
       </main>
