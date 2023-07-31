@@ -10,7 +10,7 @@ import suraj from "../../public/images/team/suraj.png"
 import event1 from '../../public/images/projects/event1.jpeg'
 import { slideAnimation } from './motion'
 
-const gallery = [ event1, netflix, suraj, event1, event1 ]
+const gallery = [ event1, netflix, event1, event1, event1 ]
 
 const Gallery = () => {
   return (
