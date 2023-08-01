@@ -30,7 +30,7 @@ import SAKSHAM_BANSAL from "../../public/images/team/SAKSHAM_BANSAL.jpeg"
 import SHIVIKA from "../../public/images/team/SHIVIKA.jpg"
 import SHUBHANG from "../../public/images/team/SHUBHANG.jpeg"
 import SIDDHARTHA_GOTUR from "../../public/images/team/SIDDHARTHA_GOTUR.png"
-import SURAJ from "../../public/images/team/SURAJ.png"
+import SURAJ_PAL from "../../public/images/team/SURAJ_PAL.png"
 import SOURABH_BHANDARI from "../../public/images/team/SOURABH_BHANDARI.jpeg"
 import UTKARSH from "../../public/images/team/UTKARSH.jpeg"
 import Yatharth from "../../public/images/team/Yatharth.png"
@@ -232,7 +232,7 @@ const webTeam = [
     role: "WebDev Lead",
     linkedIn: "https://www.linkedin.com/in/surajpverma/",
     link: "https://github.com/Surajpverma",
-    image: SURAJ
+    image: SURAJ_PAL
   }
 ]
 
