@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Tilt from 'react-parallax-tilt'
 import netflix from '../../public/images/projects/netflix.png'
-import suraj from "../../public/images/team/suraj.png"
 
 
 import event1 from '../../public/images/projects/event1.jpeg'
