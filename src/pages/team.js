@@ -16,41 +16,46 @@ import AADEESH_GARG from "../../public/images/team/AADEESH_GARG.jpeg"
 import ADITYA_DANDWATE from "../../public/images/team/ADITYA_DANDWATE.jpeg"
 import AKSHAY_SHUKLA from "../../public/images/team/AKSHAY_SHUKLA.jpeg"
 import ARCHIT_JAIN from "../../public/images/team/ARCHIT_JAIN.jpeg"
+import ARYAN_BAKSHI from "../../public/images/team/ARYAN_BAKSHI.jpeg"
 import ARYAN_SETH from "../../public/images/team/ARYAN_SETH.jpeg"
 import Ashwin from "../../public/images/team/Ashwin.jpg"
 import AVIRAL_GUPTA from "../../public/images/team/AVIRAL_GUPTA.jpeg"
 import GOBIND_SINGH from "../../public/images/team/GOBIND_SINGH.jpg"
+import GRANTH from "../../public/images/team/GRANTH.jpeg"
 import HARSHIT_SARAF from "../../public/images/team/HARSHIT_SARAF.jpeg"
 import HIMANSHU from "../../public/images/team/HIMANSHU.jpg"
 import JAY_AGARWAL from "../../public/images/team/JAY_AGARWAL.jpg"
 import KALPANA_PANDA from "../../public/images/team/KALPANA_PANDA.jpg"
 import KAVYA_AGARWAL from "../../public/images/team/KAVYA_AGARWAL.jpeg"
 import NITIN from "../../public/images/team/NITIN.jpeg"
+import RACHIT_GANDHI from "../../public/images/team/RACHIT_GANDHI.jpeg"
 import SAKSHAM_BANSAL from "../../public/images/team/SAKSHAM_BANSAL.jpeg"
 import SHIVIKA from "../../public/images/team/SHIVIKA.jpg"
 import SHUBHANG from "../../public/images/team/SHUBHANG.jpeg"
 import SIDDHARTHA_GOTUR from "../../public/images/team/SIDDHARTHA_GOTUR.png"
+import SRIRAM from "../../public/images/team/SRIRAM.jpeg"
 import SURAJ_PAL from "../../public/images/team/SURAJ_PAL.png"
 import SOURABH_BHANDARI from "../../public/images/team/SOURABH_BHANDARI.jpeg"
 import UTKARSH from "../../public/images/team/UTKARSH.jpeg"
+import VARUN_SAHNI from "../../public/images/team/VARUN_SAHNI.jpg"
 import Yatharth from "../../public/images/team/Yatharth.png"
 
 
 
 const coreTeam = [
   {
-    name: "Varun Sahani",
+    name: "Varun Sahni",
     role: "President",
-    linkedIn: "/",
-    link: "/",
-    image: ab
+    linkedIn: "http://www.linkedin.com/in/varun-sahni-profile/",
+    link: "https://github.com/varunsahni18",
+    image: VARUN_SAHNI
   },
   {
     name: "Aryan Bakshi",
     role: "Coordinator",
-    linkedIn: "/",
-    link: "/",
-    image: ab
+    linkedIn: "https://www.linkedin.com/in/aryan-bakshi-005b27222/",
+    link: "https://github.com/At0m0verr1de",
+    image: ARYAN_BAKSHI
   },
 ]
 
@@ -92,16 +97,16 @@ const projectTeam = [
   {
     name: "Granth Jain",
     role: "Project Team",
-    linkedIn: "/",
-    link: "/",
-    image: ab
+    linkedIn: "https://www.linkedin.com/me?trk=p_mwlite_feed_updates-secondary_nav",
+    link: "https://github.com/granth-22",
+    image: GRANTH
   },
   {
     name: "Sriram Hebbale",
     role: "Project Team",
-    linkedIn: "/",
-    link: "/",
-    image: ab
+    linkedIn: "https://www.linkedin.com/in/sriram-hebbale-b1113a25a/",
+    link: "https://github.com/sriram-17-17",
+    image: SRIRAM
   },
   {
     name: "Saksham Bansal",
@@ -137,9 +142,9 @@ const researchTeam = [
   {
     name: "Rachit Gandhi",
     role: "Research Team",
-    linkedIn: "/",
-    link: "/",
-    image: ab
+    linkedIn: "/https://www.linkedin.com/in/rachit-gandhi27/",
+    link: "https://github.com/Rachit-Gandhi",
+    image: RACHIT_GANDHI
   }, {
     name: "Ashwin Piyush",
     role: "Research Team",
