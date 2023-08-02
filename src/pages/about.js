@@ -46,13 +46,13 @@ const about = () => {
             <div className=" col-span-5 flex flex-col items-start justify-start xl:col-span-5 md:order-2 md:col-span-8">
               <motion.h2
                 className="mb-4 text-2xl font-bold uppercase text-primary heading tracking-widest"
-                {...slideAnimation("left", 1.1)}
+                {...slideAnimation("left", 0.5)}
               >
                 ABOUT US
               </motion.h2>
               <motion.p
                 className="font-medium first-letter:float-left first-letter:mr-2  first-letter:text-5xl first-letter:text-light first-letter:bg-dark first-letter:px-2 first-letter:font-bold"
-                {...slideAnimation("left", 1.13)}
+                {...slideAnimation("left", 0.53)}
               >
                 At Kalipatnapu AR/VR Lab, we are a dynamic and forward-thinking
                 research lab dedicated to pushing the boundaries of AR/VR
@@ -62,7 +62,7 @@ const about = () => {
               </motion.p>
               <motion.p
                 className="font-medium mt-4"
-                {...slideAnimation("left", 1.15)}
+                {...slideAnimation("left", 0.55)}
               >
                 {" "}
                 As a member of our lab, you'll have the opportunity to work on
@@ -74,7 +74,7 @@ const about = () => {
               </motion.p>
               <motion.p
                 className="font-medium my-4"
-                {...slideAnimation("left", 1.17)}
+                {...slideAnimation("left", 0.57)}
               >
                 Our lab fosters a supportive and collaborative environment,
                 where ideas flourish and creativity thrives. With access to
@@ -85,7 +85,7 @@ const about = () => {
               </motion.p>
               <motion.p
                 className="font-medium "
-                {...slideAnimation("left", 1.19)}
+                {...slideAnimation("left", 0.57)}
               >
                 Join us, and unlock a world of possibilities. As a member of the
                 Kalipatnapu AR/VR Lab, you'll gain invaluable experience, expand
@@ -98,7 +98,7 @@ const about = () => {
 
             <motion.div
               className="col-span-3 relative h-max border-2 border-solid p-8 xl:col-span-3 md:order-1 md:col-span-8 glassmorphism"
-              {...slideAnimation("right", 1.1)}
+              {...slideAnimation("right", 0.5)}
             >
               <Tilt>
                 <Image
@@ -111,7 +111,7 @@ const about = () => {
               </Tilt>
               <motion.h2
                 className="mt-4 w-full text-left text-3xl font-bold hover:underline hover:underline-offset-2 lg:text-2xl"
-                {...HeadAnimation("right", 1.1)}
+                {...HeadAnimation("right", 0.55)}
               >
                 Chaitanya Kalipatnapu
               </motion.h2>
