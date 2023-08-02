@@ -4,7 +4,7 @@ import '@/styles/globals.css'
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Footer from '@/components/Footer'
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
 import { useRouter } from 'next/router'
 
 export default function App({ Component, pageProps }) {
@@ -17,15 +17,7 @@ export default function App({ Component, pageProps }) {
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="./faviconDark.png"
-          media="(prefers-color-scheme: dark)"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/faviconLight.png"
-          media="(prefers-color-scheme: light)"
+          href="./favicon.png"
         />
       </Head>
       <main className={`w-full min-h-screen bg-no-repeat scroll-smooth`}>
