@@ -14,6 +14,7 @@ import ab from "../../public/images/ab.jpeg";
 import AADEESH_GARG from "../../public/images/team/AADEESH_GARG.jpeg";
 import ADITYA_DANDWATE from "../../public/images/team/ADITYA_DANDWATE.jpeg";
 import AKSHAY_SHUKLA from "../../public/images/team/AKSHAY_SHUKLA.jpeg";
+import AMEESH from "../../public/images/team/AMEESH.png";
 import ARCHIT_JAIN from "../../public/images/team/ARCHIT_JAIN.jpeg";
 import ARYAN_BAKSHI from "../../public/images/team/ARYAN_BAKSHI.jpeg";
 import ARYAN_SETH from "../../public/images/team/ARYAN_SETH.jpeg";
@@ -211,9 +212,9 @@ const researchTeam = [
   {
     name: "Ameesh Sethi",
     role: "Research Team",
-    linkedIn: "/",
-    link: "/",
-    image: ab,
+    linkedIn: "https://www.linkedin.com/in/ameesh-sethi/",
+    link: "https://github.com/Quick-One",
+    image: AMEESH,
   },
   {
     name: "Aviral Gupta",
