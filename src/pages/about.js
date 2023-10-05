@@ -100,7 +100,6 @@ const about = () => {
               className="col-span-3 relative h-max border-2 border-solid p-8 xl:col-span-3 md:order-1 md:col-span-8 glassmorphism"
               {...slideAnimation("right", 0.5)}
             >
-              <Tilt>
                 <Image
                   src={ck2}
                   alt="Chaitanya Kalipatnapu"
@@ -108,7 +107,6 @@ const about = () => {
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
-              </Tilt>
               <motion.h2
                 className="mt-4 w-full text-left text-3xl font-bold hover:underline hover:underline-offset-2 lg:text-2xl"
                 {...HeadAnimation("right", 0.55)}

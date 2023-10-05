@@ -135,7 +135,6 @@ const project = () => {
         />
       </div>
 
-      <ParticleContainer />
       <main className="w-full flex flex-col items-center justify-center overflow-hidden">
         <Layout className="pt-32 ">
           <AnimatedText

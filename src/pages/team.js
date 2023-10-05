@@ -278,7 +278,6 @@ const contact = () => {
       </Head>
 
       <TransitionEffect />
-      <ParticleContainer />
       <div className="w-screen h-screen -z-50 fixed overflow-hidden">
         <Image src={team} className="object-cover h-full w-full" />
       </div>

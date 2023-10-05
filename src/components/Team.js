@@ -8,7 +8,6 @@ import { HeadAnimation } from "./motion";
 
 const Team = ({ name, role, linkedIn, link, image }) => {
   return (
-    <Tilt>
       <motion.div
         className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-dark/30 glassmorphism h-64 w-48 xs:h-48 xs:w-36"
         {...HeadAnimation("up", 0.1)}
@@ -44,7 +43,6 @@ const Team = ({ name, role, linkedIn, link, image }) => {
           </div>
         </div>
       </motion.div>
-    </Tilt>
   );
 };
 

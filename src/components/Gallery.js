@@ -33,7 +33,6 @@ const Gallery = () => {
           {gallery.map((photo, index) => {
             return (
               <div key={index}>
-                <Tilt>
                   <motion.div
                     className="elative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-dark/30 glassmorphism"
                     {...HeadAnimation("up", 0.01 * index)}
@@ -46,7 +45,6 @@ const Gallery = () => {
                       />
                     </div>
                   </motion.div>
-                </Tilt>
               </div>
             );
           })}

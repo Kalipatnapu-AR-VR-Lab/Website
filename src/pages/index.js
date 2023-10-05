@@ -26,7 +26,6 @@ export default function Home() {
       <div className="w-full h-full overflow-hidden">
         <main className="flex items-center text-dark w-full min-h-[95vh] py-24 ">
           <Layout className="p-0 md:p-1.5 sm:p-8">
-            <ParticleContainer />
             <div className="flex items-center justify-between w-full lg:flex-col">
               <div className="w-1/2 md:w-full bg-transparent"></div>
               <motion.div
