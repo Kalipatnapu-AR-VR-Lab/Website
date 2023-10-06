@@ -34,7 +34,7 @@ import SHIVIKA from "../../public/images/team/SHIVIKA.jpg";
 import SHUBHANG from "../../public/images/team/SHUBHANG.jpeg";
 import SIDDHARTHA_GOTUR from "../../public/images/team/SIDDHARTHA_GOTUR.png";
 import SRIRAM from "../../public/images/team/SRIRAM.jpeg";
-import SURAJ_PAL from "../../public/images/team/SURAJ_PAL.png";
+import KAVAN_THAKKAR from "../../public/images/team/KAVAN_THAKKAR.png";
 import SOURABH_BHANDARI from "../../public/images/team/SOURABH_BHANDARI.jpeg";
 import UTKARSH from "../../public/images/team/UTKARSH.jpeg";
 import VARUN_SAHNI from "../../public/images/team/VARUN_SAHNI.jpg";
@@ -142,7 +142,7 @@ const researchTeam = [
   {
     name: "Rachit Gandhi",
     role: "Research Team",
-    linkedIn: "/https://www.linkedin.com/in/rachit-gandhi27/",
+    linkedIn: "https://www.linkedin.com/in/rachit-gandhi27/",
     link: "https://github.com/Rachit-Gandhi",
     image: RACHIT_GANDHI,
   },
@@ -236,9 +236,9 @@ const webTeam = [
   {
     name: "Kavan Thakkar",
     role: "WebDev Lead",
-    linkedIn: "https://www.linkedin.com/in/surajpverma/",
-    link: "https://github.com/Surajpverma",
-    image: SURAJ_PAL,
+    linkedIn: "https://www.linkedin.com/in/kavan-thakkar/",
+    link: "https://github.com/Ka1Thakkar",
+    image: KAVAN_THAKKAR,
   },
 ];
 
@@ -256,9 +256,16 @@ const facultyTeam = [
   {
     name: "Dr. Kamlesh Tiwari",
     role: "Faculty Mentor",
-    linkedIn: "/",
+    linkedIn: "https://www.linkedin.com/in/ktiwariiitk/",
     link: "/",
     image: kt,
+  },
+  {
+    name: "Dr. Ashutosh Bhatia",
+    role: "Faculty Mentor",
+    linkedIn: "https://www.linkedin.com/in/ashutosh-bhatia-61532618b/",
+    link: "/",
+    image: ab,
   },
   {
     name: "Dr. Ashutosh Bhatia",
