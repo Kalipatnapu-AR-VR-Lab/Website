@@ -292,6 +292,18 @@ const project = () => {
 
             <div className="col-span-12">
               <FeaturedProject
+                type="AR Navigation App"
+                title="KXR Campus Navigation Project"
+                summary="The KXR Campus Navigation Project aims to develop an Augmented Reality (AR) navigation app for campus users. This app will guide users through the campus using geolocation data on a 2D map, providing information about various locations. Its benefits extend to newcomers, enhancing their navigation experience and offering historical insights. Progress includes the integration of GeoSpatial Creator and ongoing testing, with a prototype in development."
+                img={drone}
+                link=""
+                sourceLink=""
+                source="linkedin"
+              />
+            </div>
+
+            <div className="col-span-12">
+              <FeaturedProject
                 type="Talk Session"
                 title="Extended Reality"
                 summary="An educational event on Extended Reality (XR) technology was a success, featuring discussions on basics, applications, success stories, motivation, coding tools, best practices, and challenging problems. The event expanded our understanding of the potential of AR/VR."
