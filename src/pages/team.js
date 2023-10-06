@@ -234,7 +234,7 @@ const researchTeam = [
 
 const webTeam = [
   {
-    name: "Suraj Pal",
+    name: "Kavan Thakkar",
     role: "WebDev Lead",
     linkedIn: "https://www.linkedin.com/in/surajpverma/",
     link: "https://github.com/Surajpverma",

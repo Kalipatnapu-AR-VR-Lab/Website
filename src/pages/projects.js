@@ -15,6 +15,8 @@ import ParticleContainer from "@/components/ParticleContainer";
 
 import projects from "../../public/images/backgrounds/projects.jpg";
 import event1 from "../../public/images/projects/event1.jpeg";
+import smithy from "../../public/images/projects/Smithy.jpg";
+import drone from "../../public/images/projects/Drone.png";
 import { slideAnimation, HeadAnimation } from "@/components/motion";
 
 const FramerImage = motion(Image);
@@ -73,18 +75,18 @@ const FeaturedProject = ({
           className="mt-2 flex items-center"
           {...HeadAnimation("right", 0)}
         >
-          <Link href={sourceLink} target="_blank" className="w-10">
+          {sourceLink ? <Link href={sourceLink} target="_blank" className="w-10">
             {" "}
             {source ? <LinkedInIcon /> : <GithubIcon />}{" "}
-          </Link>
-          <Link
+          </Link> : <div></div>}
+          {button ? <Link
             href={link}
             target="_blank"
             className=" mx-4 flex items-center rounded-md bg-primary text-light hover:bg-transparent p-2 px-6 text-lg border-2 border-primary border-solid  hover:text-primary md:p-2 md:px-4 md:text-base duration-500 font-[50] tracking-[0.075rem]"
           >
             {" "}
             {button}{" "}
-          </Link>
+          </Link> : <div></div>}
         </motion.div>
       </div>
     </motion.article>
@@ -276,12 +278,34 @@ const project = () => {
                 source="linkedin"
               />
             </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                type="VR headset simulation"
+                title="To create a VR simulation of Smithy Shop"
+                summary="The KXR Smithy Project aims to create a virtual reality (VR) simulation of a smithy shop. The project outlines the equipment required, including tools such as tongs, hammers, and an anvil. The main operations involve heating, squaring, marking, drawing out, bending, and quenching a metal workpiece. Ultimately, the project aims to provide a comprehensive VR experience for learning and evaluating blacksmithing skills, offering modes for training, evaluation, and free play within different VR settings."
+                img={smithy}
+                link=""
+                sourceLink=""
+                source="linkedin"
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Gesture Control"
+                title="Gesture Controlled Drone Project"
+                summary="The Gesture Controlled Drone Project is aimed at developing a prototype of a drone that can be controlled through human gestures, including head movements and hand gestures. The project's primary objective is to create a versatile drone with applications in fields requiring active human maintenance or inspection in challenging or hazardous environments, such as nuclear reactors or industrial settings. Key features of the project include integrating a VR headset for a first-person view, camera orientation controlled by eye tracking, and drone movement controlled by head movements. The team will utilize Unity, C#, AR Foundation, Arduino Mega, and AR headsets like Magic Leap or Oculus Rift, along with computer vision for eye tracking. The project timeline outlines various stages of development, culminating in the integration of the drone camera with a VR headset and final testing."
+                img={drone}
+                link=""
+                sourceLink=""
+                source="linkedin"
+              />
+            </div>
           </div>
         </Layout>
-        <Layout>
+        {/* <Layout>
           <Events />
           <Publications />
-        </Layout>
+        </Layout> */}
       </main>
     </div>
   );
