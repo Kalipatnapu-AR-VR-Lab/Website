@@ -10,6 +10,7 @@ import team from "../../public/images/backgrounds/team.jpeg";
 
 import kt from "../../public/images/kt.jpeg";
 import ab from "../../public/images/ab.jpeg";
+import ys from '../../public/images/team/YASHVARDHAN_SHARMA.jpg';
 
 import AADEESH_GARG from "../../public/images/team/AADEESH_GARG.jpeg";
 import ADITYA_DANDWATE from "../../public/images/team/ADITYA_DANDWATE.jpeg";
@@ -257,22 +258,19 @@ const facultyTeam = [
     name: "Dr. Kamlesh Tiwari",
     role: "Faculty Mentor",
     linkedIn: "https://www.linkedin.com/in/ktiwariiitk/",
-    link: "/",
     image: kt,
   },
   {
     name: "Dr. Ashutosh Bhatia",
     role: "Faculty Mentor",
     linkedIn: "https://www.linkedin.com/in/ashutosh-bhatia-61532618b/",
-    link: "/",
     image: ab,
   },
   {
-    name: "Dr. Ashutosh Bhatia",
+    name: "Dr. Yashvardhan Sharma",
     role: "Faculty Mentor",
-    linkedIn: "/",
-    link: "/",
-    image: ab,
+    linkedIn: "https://www.linkedin.com/in/yashvardhan-sharma-65a87b14/",
+    image: ys,
   },
 ];
 

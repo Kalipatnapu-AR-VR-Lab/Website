@@ -28,14 +28,14 @@ const Team = ({ name, role, linkedIn, link, image }) => {
             {role}{" "}
           </p>
           <div className="flex gap-4 py-0">
-            <Link
+            {link ? <Link
               href={link}
               target="_blank"
               className="w-8 rounded-full bg-light xs:w-6"
             >
               {" "}
               <GithubIcon />{" "}
-            </Link>
+            </Link> : <></>}
             <Link href={linkedIn} target="_blank" className="w-8 xs:w-6">
               {" "}
               <LinkedInIcon />{" "}
