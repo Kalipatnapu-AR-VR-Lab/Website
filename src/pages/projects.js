@@ -268,18 +268,6 @@ const project = () => {
 
             <div className="col-span-12">
               <FeaturedProject
-                type="Talk Session"
-                title="Extended Reality"
-                summary="An educational event on Extended Reality (XR) technology was a success, featuring discussions on basics, applications, success stories, motivation, coding tools, best practices, and challenging problems. The event expanded our understanding of the potential of AR/VR."
-                img={event1}
-                link="https://drive.google.com/file/d/1FgmlWu6GiPfdxaDTISJuLLgIu98vpqCH/view?pli=1"
-                sourceLink="https://www.linkedin.com/feed/update/urn:li:activity:7071875912685821952?utm_source=share&utm_medium=member_desktop"
-                button="Recording"
-                source="linkedin"
-              />
-            </div>
-            <div className="col-span-12">
-              <FeaturedProject
                 type="VR headset simulation"
                 title="To create a VR simulation of Smithy Shop"
                 summary="The KXR Smithy Project aims to create a virtual reality (VR) simulation of a smithy shop. The project outlines the equipment required, including tools such as tongs, hammers, and an anvil. The main operations involve heating, squaring, marking, drawing out, bending, and quenching a metal workpiece. Ultimately, the project aims to provide a comprehensive VR experience for learning and evaluating blacksmithing skills, offering modes for training, evaluation, and free play within different VR settings."
@@ -289,14 +277,28 @@ const project = () => {
                 source="linkedin"
               />
             </div>
+
             <div className="col-span-12">
               <FeaturedProject
                 type="Gesture Control"
                 title="Gesture Controlled Drone Project"
-                summary="The Gesture Controlled Drone Project is aimed at developing a prototype of a drone that can be controlled through human gestures, including head movements and hand gestures. The project's primary objective is to create a versatile drone with applications in fields requiring active human maintenance or inspection in challenging or hazardous environments, such as nuclear reactors or industrial settings. Key features of the project include integrating a VR headset for a first-person view, camera orientation controlled by eye tracking, and drone movement controlled by head movements. The team will utilize Unity, C#, AR Foundation, Arduino Mega, and AR headsets like Magic Leap or Oculus Rift, along with computer vision for eye tracking. The project timeline outlines various stages of development, culminating in the integration of the drone camera with a VR headset and final testing."
+                summary="The Gesture Controlled Drone Project is aimed at developing a prototype of a drone that can be controlled through human gestures, including head movements and hand gestures. The project's primary objective is to create a versatile drone with applications in fields requiring active human maintenance or inspection in challenging or hazardous environments, such as nuclear reactors or industrial settings."
                 img={drone}
                 link=""
                 sourceLink=""
+                source="linkedin"
+              />
+            </div>
+
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Talk Session"
+                title="Extended Reality"
+                summary="An educational event on Extended Reality (XR) technology was a success, featuring discussions on basics, applications, success stories, motivation, coding tools, best practices, and challenging problems. The event expanded our understanding of the potential of AR/VR."
+                img={event1}
+                link="https://drive.google.com/file/d/1FgmlWu6GiPfdxaDTISJuLLgIu98vpqCH/view?pli=1"
+                sourceLink="https://www.linkedin.com/feed/update/urn:li:activity:7071875912685821952?utm_source=share&utm_medium=member_desktop"
+                button="Recording"
                 source="linkedin"
               />
             </div>
