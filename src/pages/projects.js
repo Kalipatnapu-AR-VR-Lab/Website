@@ -17,6 +17,7 @@ import projects from "../../public/images/backgrounds/projects.jpg";
 import event1 from "../../public/images/projects/event1.jpeg";
 import smithy from "../../public/images/projects/Smithy.jpg";
 import drone from "../../public/images/projects/Drone.png";
+import navigation from "../../public/images/projects/Campus_Navigation.png";
 import { slideAnimation, HeadAnimation } from "@/components/motion";
 
 const FramerImage = motion(Image);
@@ -295,7 +296,7 @@ const project = () => {
                 type="AR Navigation App"
                 title="KXR Campus Navigation Project"
                 summary="The KXR Campus Navigation Project aims to develop an Augmented Reality (AR) navigation app for campus users. This app will guide users through the campus using geolocation data on a 2D map, providing information about various locations. Its benefits extend to newcomers, enhancing their navigation experience and offering historical insights. Progress includes the integration of GeoSpatial Creator and ongoing testing, with a prototype in development."
-                img={drone}
+                img={navigation}
                 link=""
                 sourceLink=""
                 source="linkedin"
