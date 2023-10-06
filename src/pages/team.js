@@ -248,7 +248,6 @@ const psdTeam = [
     name: "Shivika Dhandhania",
     role: "PSD Team",
     linkedIn: "https://www.linkedin.com/in/shivika-dhandhania-4b3b4521b",
-    link: "/",
     image: SHIVIKA,
   },
 ];
