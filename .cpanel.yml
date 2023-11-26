@@ -1,0 +1,11 @@
+
+---
+deploy:
+  tasks:
+    - export DEPLOY_DIR=/home/updxvar7pr6t/public_html
+    - /bin/cp -R * $DEPLOY_DIR
+    - /bin/cp -R .next $DEPLOY_DIR
+    - /bin/cp -R public $DEPLOY_DIR
+    - /bin/cp -R node_modules $DEPLOY_DIR
+    - /bin/cp -R .env $DEPLOY_DIR
+    - /bin/cp -R .env.production $DEPLOY_DIR
